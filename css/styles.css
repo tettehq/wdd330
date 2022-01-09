@@ -1,0 +1,9 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+}
+
+header {
+    background-color: rgb(220, 245, 239);
+    text-align: center;
+}
