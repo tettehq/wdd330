@@ -5,8 +5,8 @@ function updatePortfolio() {
             url: "week1/index.html"
         },
         {
-            label: "Week2 notes",
-            url: "week2/index.html"
+            label: "Week2 exercises",
+            url: "week2/week2_exercise.html"
         },
         {
             label: "Week3 notes",
