@@ -1,0 +1,12 @@
+body{
+    background-color: rgba(251, 251, 251, 0.363);
+    font-family: Gluten;
+}
+
+div.exercise {
+    margin: 5em auto;
+}
+
+div.exercise:nth-child(even) {
+    background-color: rgb(170, 228, 204);
+}

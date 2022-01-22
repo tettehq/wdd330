@@ -9,8 +9,8 @@ function updatePortfolio() {
             url: "week2/week2_exercise.html"
         },
         {
-            label: "Week3 notes",
-            url: "week3/index.html"
+            label: "Week3 exercises",
+            url: "week3/week3_exercises.html"
         }
     ]
 
@@ -27,3 +27,8 @@ function updatePortfolio() {
 }
 
 updatePortfolio();
+
+let d = new Date()
+document.getElementById("currentyear").innerHTML = d.getFullYear()
+
+document.getElementById("currentdatetime").innerHTML = `Last updated: ${new Date(document.lastModified)}`
