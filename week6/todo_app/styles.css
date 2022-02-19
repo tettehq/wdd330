@@ -1,0 +1,67 @@
+main, footer {
+    font-family: Josefin Sans, sans-serif;
+    max-width: 50%;
+    margin: auto;
+}
+
+/* main {
+    position: relative;
+} */
+
+#mainFooter {
+    /* position: fixed;
+    left: 25%;
+    bottom: 40%; */
+    margin-top: 3em;
+}
+
+#taskList {
+    max-width: 300px;
+}
+
+#listFooter {
+    max-width: 300px;
+    margin-top: -1em;
+}
+
+li {
+    list-style: none;
+    /*display: grid;
+    grid-template-columns: 20px 1fr 20px;
+    column-gap: 10px; */
+    border: 1px solid black;
+    padding: 10px;
+}
+
+li.taskInfo {
+    display: grid;
+    grid-template-columns: 1fr 30px;
+}
+
+.taskInfo label {
+    grid-column: 1, 2;
+}
+
+.taskInfo button.delButton {
+    grid-column: 2, 3;
+}
+
+#taskList li label {
+    display: inline;
+}
+
+#listFooter div {
+    margin-right: 2%;
+    display: inline;
+}
+
+/* #taskList li span.checkbox {
+    grid-column: 0,1;
+    place-items: center;
+    width: 100%;
+    border: 1px solid black;
+} */
+
+#taskList li span.taskName {
+    grid-column: 1,2;
+}

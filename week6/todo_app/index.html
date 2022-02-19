@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ToDo Application</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@500&family=Josefin+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>TODO APPLICATION</h1>
+        </header>
+        <main>
+            <h2>ToDo List</h2>
+            <ul id="taskList">
+                <!-- <li>
+                    <span class="checkbox"></span><span class="taskName">Task one</span><span class="delTask">X</span>
+                </li> -->
+                <li class="taskInfo">
+                    <label for="task">
+                        <input type="checkbox" name="status" id="task" value="false"> Task One
+                    </label>
+                    <button class="delButton">X</button>
+                </li>
+            </ul>
+            <ul id="listFooter">
+                <li id="listFooter">
+                    <div><span></span> Tasks</div>
+                    <div class="filterBy">All</div>
+                    <div class="filterBy">Active</div>
+                    <div class="filterBy">Completed</div>
+                </li>
+            </ul>
+        </main>
+        <footer id="mainFooter">
+            <form name="toDo" onsubmit="return false">
+                <label for='addTask'>Task:
+                    <input type='text' id='addTask' name='addTask' autofocus placeholder='Type your task here'   maxlength=32 required>
+                    <button id="add">+</button>
+                </label>
+            </form>
+        </footer>
+        <script src="main.js" type="module"></script>
+    </body>
+</html>

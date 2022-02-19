@@ -63,6 +63,8 @@ class Hikes {
     </div>
     
     `;
+    this.addHikeListener(item);
+
     return item;
   }
 
@@ -95,7 +97,6 @@ class Hikes {
     const hikeListElement = document.getElementById("hikes");
     hikeListElement.innerHTML = "";
     this.createHikeList(hikeList, hikeListElement);
-    this.addHikeListener();
   }
 
   showOneHike(hike) {
@@ -105,10 +106,13 @@ class Hikes {
     this.backButton.classList.remove("hidden");
   }
 
-  addHikeListener() {
-    for (let i = 0; i < hikeList.length; i++) {
-      hikeList[i].addEventListener("click", this.showOneHike(hikeList[i]));
-    }
+  addHikeListener(hike) {
+    // let childElements = this.parentElement.children;
+    // let children = Array.from(childElements);
+    // for (let i=0; i < children.length; i++) {
+    //   children[i].addEventListener("touchend", this.showOneHike())
+    // }
+    hike.addEventListener("touchend", this.showOneHike(hike))
   }
 
 //   addHikeListenerFull() {
@@ -134,5 +138,3 @@ const myHike = new Hikes("hikes");
 window.addEventListener("load", () => {
   myHike.showHikeList();
 });
-
-myHike.addHikeListener()
