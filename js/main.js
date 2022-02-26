@@ -23,6 +23,10 @@ function updatePortfolio() {
         {
             label: "week7 exercises",
             url: "week7/exercises/index.html"
+        },
+        {
+            label: "week8 exercises",
+            url: "week8/exercises/index.html"
         }
     ]
 

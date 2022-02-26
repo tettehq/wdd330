@@ -1,0 +1,31 @@
+/* font-family: 'Roboto Slab', serif;
+font-family: 'ZCOOL QingKe HuangYou', cursive; */
+
+body {
+    font-family: 'Roboto Slab', serif;
+    background-color: black;
+}
+
+main div {
+    margin: auto;
+    background-color: #FFE81F;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+h1 {
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    text-align: center;
+
+}
+
+button {
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    text-align: center;
+    padding: 3px 10px;
+}
+
