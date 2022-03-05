@@ -65,3 +65,8 @@ li.taskInfo {
 #taskList li span.taskName {
     grid-column: 1,2;
 }
+
+.filterBy: {
+    border: 2px double black ;
+    padding: 5px;
+}
