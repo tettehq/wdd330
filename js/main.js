@@ -21,6 +21,10 @@ function updatePortfolio() {
             url: "week5/testing_and_debugging/index.html"
         },
         {
+            label: "week6 midterm challenge",
+            url: "week6/todo_app/index.html"
+        },
+        {
             label: "week7 exercises",
             url: "week7/exercises/index.html"
         },

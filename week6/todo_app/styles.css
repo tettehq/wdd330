@@ -4,6 +4,14 @@ main, footer {
     margin: auto;
 }
 
+ul {
+    border: 2px double black;
+    border-radius: 10px;
+    list-style: none;
+    background-color: aqua;
+    box-shadow: 10px 10px 5em;
+}
+
 /* main {
     position: relative;
 } */
@@ -31,6 +39,7 @@ li {
     column-gap: 10px; */
     border: 1px solid black;
     padding: 10px;
+    background-color: antiquewhite;
 }
 
 li.taskInfo {
@@ -50,23 +59,22 @@ li.taskInfo {
     display: inline;
 }
 
-#listFooter div {
-    margin-right: 2%;
-    display: inline;
+#statusBar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 }
 
-/* #taskList li span.checkbox {
-    grid-column: 0,1;
-    place-items: center;
-    width: 100%;
-    border: 1px solid black;
-} */
-
-#taskList li span.taskName {
-    grid-column: 1,2;
+#statusBar div, #statusBar button {
+    flex : 1 1 2rem
 }
 
-.filterBy: {
-    border: 2px double black ;
-    padding: 5px;
+li.hidden {
+    display: none;
+}
+
+button.selected {
+    background-color: rgb(155, 128, 55);
+    color: antiquewhite;
 }

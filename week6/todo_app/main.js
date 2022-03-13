@@ -1,8 +1,12 @@
-import Todos from "./todos.js"
+import Todos from "./todos_module.js"
+import * as utilities from "./utilities.js"
 
-let task = new Todos("#taskList", "todos");
+const task = new Todos("#taskList", "todos");
 window.addEventListener("load", () => {
     task.listTodos();
+    task.addTodo();
+    task.completeTodo();
+    task.addTaskListener();
     task.filterTodo();
 })
-task.addTaskListener();
+

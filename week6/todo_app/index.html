@@ -19,22 +19,22 @@
                 </li> -->
                 <li class="taskInfo">
                     <label for="task">
-                        <input type="checkbox" name="status" id="task" value="false"> Task One
+                        <input type="checkbox" name="status" id="task"> Task One
                     </label>
                     <button class="delButton">X</button>
                 </li>
             </ul>
             <ul id="listFooter">
-                <li id="listFooter">
-                    <div><span></span> Tasks</div>
-                    <div class="filterBy all selected">All</div>
-                    <div class="filterBy active">Active</div>
-                    <div class="filterBy completed">Completed</div>
+                <li id="statusBar">
+                    <div><span id="count"></span> Tasks</div>
+                    <button class="filterBy all">All</button>
+                    <button class="filterBy active">Active</button>
+                    <button class="filterBy completed">Completed</button>
                 </li>
             </ul>
         </main>
         <footer id="mainFooter">
-            <form name="toDo" onsubmit="return false">
+            <form name="toDo">
                 <label for='addTask'>Task:
                     <input type='text' id='addTask' name='addTask' autofocus placeholder='Type your task here'   maxlength=32 required>
                     <button id="add">+</button>
