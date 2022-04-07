@@ -1,0 +1,92 @@
+html {
+    background-image: radial-gradient(circle, rgb(242, 158, 69), rgba(210, 162, 31, 0.495));
+    background-size: contain;
+    font-family: Gluten, "cursive";
+}
+
+body {
+    color: teal;
+}
+
+.hidden {
+    display: none;
+}
+
+div#box {
+    background-image: repeating-linear-gradient( to right, rgb(54, 54, 77) 10%, black 20%);
+    background-image: -webkit-repeating-linear-gradient( to right, rgb(54, 54, 77) 10%, black 20%);
+    background-image: -moz-repeating-linear-gradient( to right, rgb(54, 54, 77) 10%, black 20%);
+    background-size: 10%;
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    border: 3px dashed red;
+    position: relative;
+}
+
+div.circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: darkgreen;
+    position: absolute;
+}
+
+div.food {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: chocolate;
+    position: absolute;
+}
+
+div.scoreboard {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    background-color: aliceblue;
+    border: 2px solid rgb(124, 131, 137);
+    box-shadow: 3px 3px 3px;
+    padding: 2em;
+}
+
+div.scoreboard h2 {
+    margin: auto;
+    color: green;
+    font-size: 1.5em;
+}
+
+
+/* .circle.movedown {
+    animation: movedown 5s linear 0s infinite normal none;
+}
+
+.circle.moveup {
+    animation: movedown 5s linear 0s infinite reverse none;
+}
+
+.circle.moveleft {
+    animation: moveright 5s linear 0s infinite reverse none;
+}
+
+.circle.moveright {
+    animation: moveright 5s linear 0s infinite normal none;
+}
+
+@keyframes movedown {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(500px);
+    }
+}
+
+@keyframes moveright {
+    from {
+        transform: translateX(0px);
+    }
+    to {
+        transform: translateX(500px);
+    }
+} */
